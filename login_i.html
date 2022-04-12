@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <title>Sign In & Sign Up Form</title>
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form action="acc_i.html" autocomplete="off" class="sign-in-form">
+                        <div class="logo">
+                            <h3>NEX</h3>
+                        </div>
+                        <div class="heading">
+                            <h2>Welcome Back</h2>
+                            <h6>Not registered yet?</h6>
+                            <a href="#" class="toggle">Sign Up</a>
+                        </div>
+                        <div>
+                            <div class="actual-form contactForm">
+                                <div class="input-wrap">
+                                    <input type="text" minlength="4" autocomplete="off" class="input-field name"
+                                        id="name" name="name" required>
+                                    <label>Name</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="password" minlength="4" autocomplete="off" class="input-field password"
+                                        id="password" name="password" required>
+                                    <label>Password</label>
+                                </div>
+                                <div id="contactForm">
+                                    <a href="acc_i.html"><input type="submit" value="Sign In"
+                                            class="sign-btn submit" id="submit" name="submit"></a>
+                                </div>
+                                <p class="text">Forgot your password or login details? <a href="#">Get Help</a> signing
+                                    in
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="acc_i.html" autocomplete="off" class="sign-up-form">
+                        <div class="logo">
+                            <img src="../images/logo.png" alt="nex">
+                            <h3>NEX</h3>
+                        </div>
+                        <div class="heading">
+                            <h2>Get Started</h2>
+                            <h6>Already have an Account?</h6>
+                            <a href="#" class="toggle">Sign In</a>
+                        </div>
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" autocomplete="off" class="input-field name" id="name"
+                                    required>
+                                <label>Name</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="email" minlength="4" autocomplete="off" class="input-field email"
+                                    id="email" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" autocomplete="off" class="input-field password"
+                                    id="password" required>
+                                <label>Password</label>
+                            </div>
+                            <input type="submit" value="Sign Up" class="sign-btn submit" id="submit">
+                            <p class="text">By signing up I agree to the <a href="#">Terms of Services</a> and <a
+                                    href="#">Privacy Policy</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="carousel">
+                    <div class="images-wrapper">
+                        <img src="../images/image1.png" alt="" class="image img-1 show">
+                        <img src="../images/image2.png" alt="" class="image img-2">
+                        <img src="../images/image3.png" alt="" class="image img-3">
+                    </div>
+                    <div class="text-slider">
+                        <div class="text-wrap">
+                            <div class="text-group">
+                                <h2>Search for the events you are looking for</h2>
+                                <h2>Customize as you like</h2>
+                                <h2>Invite students to your class</h2>
+                            </div>
+                        </div>
+                        <div class="bullets">
+                            <span class="active" data-value="1"></span>
+                            <span data-value="2"></span>
+                            <span data-value="3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBIag_ndexrbybOfR6_nYX-Q2Msti_MrFo",
+            authDomain: "sih-nex.firebaseapp.com",
+            databaseURL: "https://sih-nex-default-rtdb.firebaseio.com/",
+            projectId: "sih-nex",
+            storageBucket: "sih-nex.appspot.com",
+            messagingSenderId: "16645153885",
+            appId: "1:16645153885:web:3e3b9b0f90794c288019b4"
+        };
+
+        firebase.initializeApp(firebaseConfig); -->
+
+    <!-- // var messagesRef = firebase.database()
+       //     .ref('Collected Data');
+
+      /*  document.getElementById('contactForm')
+            .addEventListener('submit', submitForm);
+
+        function submitForm(e) {
+            e.preventDefault(); */
+
+            // Get values
+         /*   var name = getInputVal('name');
+            var password = getInputVal('password');
+
+            saveMessage(name, password);
+            document.getElementById('contactForm').reset();
+        }*/
+
+        // Function to get get form values
+        //function getInputVal(id) {
+       //     return document.getElementById(id).value;
+        //}
+
+         
+    </script> -->
+    <!-- <script src="../firebase/firebase.js"></script> -->
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

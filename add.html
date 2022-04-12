@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/add.css">
+    <title>Add Event</title>
+</head>
+
+<body>
+    <div class="container-main">
+        <h1 style="color: #f3c623; font-weight: 600;">Add an Event</h1>
+        <div class="heading">
+            <input type="text" class="fill-head" id="heading" placeholder="Add a Title for the Event">
+        </div>
+        <div class="banner-image">
+            <!-- <button class="banner">Add a Banner Image</button> -->
+            <form action="/action_page.php">
+                <label for="photo" class="label">Choose a photo for the banner!</label>
+
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </form>
+        </div>
+        <hr style="margin: 10px 0;">
+        <div class="description">
+            <div class="main-desc">
+                <label for="desc" style="font-size: 26px; font-weight: 600;">Description</label>
+                <textarea name="" id="desc" cols="80" rows="9" class="desc"
+                    placeholder="Add Description to your Event"></textarea>
+            </div>
+            <div class="short-desc">
+                <div class="cont">
+                    <a href="https://jecrcfoundation.com/" target="_blank">Registration Link</a>
+                    <br><br>
+                    <label for="from">From </label>
+                    <input type="datetime-local" class="small-input" id="from"><br>
+                    <label for="to">To </label>
+                    <input type="datetime-local" class="small-input" id="to"><br>
+                    <label for="extra-small-input">Place</label>
+                    <input type="text" id="extra-small-input">
+                    <button id="locate">Locate</button><br>
+                    <br><br>
+                    <hr>
+                    <input type="text" class="tags" placeholder="Add special Tags">
+                    <hr>
+                    <input type="text" class="tags" placeholder="Add more Tags">
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <form action="/action_page.php">
+                <label for="photo" class="label">Choose multiple photos for sample!</label>
+
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </form>
+        </div>
+        <div class="who-can">
+            <label class="topic-head" for="conditions">Who can participate (Add every condition in a new line)</label>
+            <br>
+            <textarea name="" id="conditions" cols="30" rows="10" class="condition"
+                placeholder="Start adding conditions for participation"></textarea>
+        </div>
+        <div class="prizes">
+            <label class="topic-head" for="prize-conditions">Prizes (Add each prize condition in a new line)</label>
+            <br>
+            <textarea name="" id="prize-conditions" cols="30" rows="10" class="prize-condition"
+                placeholder="Start adding conditions for prize distribution and certifications"></textarea>
+        </div>
+        <div class="who-can">
+            <label class="topic-head" for="conditions">Add more details for the Event</label>
+            <br>
+            <textarea name="" id="conditions" cols="30" rows="10" class="condition"
+                placeholder="Add more details (not necessary)"></textarea>
+        </div>
+        <div class="sponsors">
+            <form action="/action_page.php">
+                <label for="photo" class="label">Choose multiple photos for sponsers!</label>
+
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </form>
+        </div>
+        <div class="submit">
+            <a href="../html files/index.html" class="">Submit Event</a>
+        </div>
+    </div>
+    <script>
+        function display(){
+            let input = document.getElementById("extra-small-input");
+            input.value = "JECRC University";
+        }
+        let locate = document.getElementById("locate");
+        console.log(locate);
+        locate.addEventListener("click", display)
+    </script>
+</body>
+
+</html>
