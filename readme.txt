@@ -1,3 +1,6 @@
+Website url :-  https://nex-2022.vercel.app/
+
+
 Thank you for using our template!
 
 For more awesome templates please visit https://colorlib.com/wp/templates/
